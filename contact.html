@@ -1,0 +1,106 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ХНАДУ</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ГОЛОВНА</a></li>
+                    <li><a href="about.html">ПРО НАС</a></li>
+                    <li><a href="course.html">ФАКУЛЬТЕТИ</a></li>
+                    <li><a href="faculty.html">СПЕЦІАЛЬНОСТІ</a></li>
+                    <li><a href="contact.html">КОНТАКТИ</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>ЗВ'ЯЖІТЬСЯ З НАМИ</h1>
+    </section>
+    
+    
+<!------- Contact Us ------->
+
+    
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1282.148162832175!2d36.2423762!3d50.0058009!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0dcc2bc5dd9%3A0x7ffadbdd4a3b1bb6!2z0KXQsNGA0LrRltCy0YHRjNC60LjQuSDQvdCw0YbRltC-0L3QsNC70YzQvdC40Lkg0LDQstGC0L7QvNC-0LHRltC70YzQvdC-LdC00L7RgNC-0LbQvdGW0Lkg0YPQvdGW0LLQtdGA0YHQuNGC0LXRgg!5e0!3m2!1sru!2sua!4v1701733825444!5m2!1sru!2sua" width="720" height="445" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+    
+    <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>АДРЕСА</h5>
+                            <p>вул. Ярослава Мудрого 25 
+                                <br>м. Харків, Україна, 61002</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>КОНТАКТНІ НОМЕРА</h5>
+                            <p>Приймальна комісія: +38 (050) 633-58-93
+                            <br>Мобільний ректорату: +38 (050) 889-2151 
+                            </p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>ЕЛЕКТРОННА ПОШТА</h5>
+                            <p>Приймальна комісія: abitur@khadi.kharkov.ua
+                            <br>Поштовий адміністратор: admin@khadi.kharkov.ua
+                            </p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <form action="contact-form-handler.php"  method="post">
+                    <input type="text" name="name" placeholder="Введіть своє ім'я" required>
+                    <input type="email" name="email" placeholder="Введіть свою поштову адресу" required>
+                    <input type="text" name="subject" placeholder="Введіть тему повідослення" required>
+                    <textarea rows="8" name="message" placeholder="Повідомлення" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Відправити</button>
+                    </form> 
+                </div>
+            </div>
+    </section>
+    
+<!-------- footer ---------->
+
+<section class="footer">
+    <h4>Соціальні мережі</h4>
+    <p>Напишіть нам якщо в Вас ще залишилися питання.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/khnahu/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UC8MWxx9covI5HQcQrGQdMCA"><i class="fa fa-youtube"></i></a>
+            <a href="https://www.instagram.com/khnaduuniversity/"><i class="fa fa-instagram"></i></a>
+            <a href="https://t.me/khnahu/"><i class="fa fa-telegram"></i></a>
+        </div>
+</section>    
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>    
