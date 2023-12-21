@@ -312,6 +312,7 @@ h3{
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
+    font-size: 18px;
 }
 
 .collapsible-btn.active {
@@ -334,7 +335,7 @@ h3{
 }
 
 input[type="text"] {
-    width: 100%; /* изменено */
+    width: 100%; 
     height: 40px;
     font-size: 18px;
 }
@@ -353,7 +354,7 @@ input[type="text"] {
         position: relative;
         left: 0;
         top: 0;
-        width: 100%; /* изменено */
+        width: 100%; 
     }
 }
 
@@ -370,12 +371,18 @@ input[type="text"] {
     border-radius: 10px;
     text-align: center;
     padding: 100px 0;
+    font-size: 15px;
 }
 .cta h1{
     color: #fff;
     margin-bottom: 40px; 
     padding: 0; 
 }
+
+::placeholder {
+    font-size: 16px; 
+}
+
 
 @media(max-width:700px){
     .cta h1{
